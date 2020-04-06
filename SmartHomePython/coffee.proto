@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+message Command {
+    string command = 1;
+}
+
+service Coffee {
+    rpc ChangeCommand(Command) returns (Command) {}
+}

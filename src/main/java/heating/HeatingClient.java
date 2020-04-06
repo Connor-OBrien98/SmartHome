@@ -14,7 +14,7 @@ public class HeatingClient {
 	private static HeatingServiceGrpc.HeatingServiceFutureStub futureStub;
 
 	public static void main(String[] args) throws Exception {
-		ManagedChannel channel = ManagedChannelBuilder.forAddress("localhost", 50051).usePlaintext().build();
+		ManagedChannel channel = ManagedChannelBuilder.forAddress("localhost", 50052).usePlaintext().build();
 
 		//stubs -- generate from proto
 		blockingStub = HeatingServiceGrpc.newBlockingStub(channel);

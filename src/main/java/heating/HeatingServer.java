@@ -15,7 +15,7 @@ public class HeatingServer extends HeatingServiceImplBase {
 	 public static void main(String[] args) throws IOException, InterruptedException {
 		 HeatingServer heatingserver = new HeatingServer();
 		   
-		    int port = 50051;
+		    int port = 50052;
 		    Server server = ServerBuilder.forPort(port)
 		        .addService(heatingserver)
 		        .build()
